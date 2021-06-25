@@ -44,8 +44,7 @@ for item in items:
                 print("ok")
         except:
             print("!!!!!!!!!!VERI CEKILEMEDI!!!!!!!!!!")
-        # trler=AllItemContent.find_all("tr")
-        # print(trler)
+
 
 print(itemList)
 neyeGore = []
@@ -53,8 +52,7 @@ for i in range(len(itemList)):
     for k, v in itemList[i].items():
         if k not in neyeGore:
             neyeGore.append(k)
-        # if k==filterForitems:
-        #     print(k,v)
+
 
 print(neyeGore)
 filterForitems = input("Neye Göre Listelesin : ")
