@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 ULR = "https://www.amazon.com.tr/s?k=ekran+kartı&__mk_tr_TR=ÅMÅŽÕÑ&ref=nb_sb_noss_1"
 header = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"}
+    "User-Agent": "USER AGENTİNİZİ BURAYA GİRECEKSİNİZ YOKSA AMAZON SİZİ BOT ZANLEDEREK VERİ CEKMEYİ ENGELLİYEBİLİYOR"}
 r = requests.get(ULR, headers=header)
 soup = BeautifulSoup(r.content, "lxml")
 items = soup.find_all("div",
